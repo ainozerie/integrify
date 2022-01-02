@@ -1,11 +1,23 @@
-import './App.css';
+import React, { Component } from 'react'
+import Header from './Header';
+import Main from './Main';
 
-function App() {
-  return (
-    <div className="App">
-      Hello world!
-    </div>
-  );
+
+export default class App extends Component {
+
+  state = {
+    searchInput: ''
+  }
+  inputHandler = (event) => {
+    this.setState({searchInput: event.target.value})
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header inputHandler={this.inputHandler} />
+        <Main searchInput={this.state.searchInput} />
+      </div>
+    )
+  }
 }
-
-export default App;

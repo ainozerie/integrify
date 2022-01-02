@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #fdfffc;
+}
+header {
+  background-color: #011627;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px 0px #6B717E;
+}
+.logo h1 {
+  color: whitesmoke;
+  font-size: 26px;
+  margin-left: 2vw;
+}
+input {
+  margin-right: 2vw;
+  height: 30px;
+  width: 300px;
+  background-color: whitesmoke;
+  border: none;
+  font-size: 16px;
+  padding: 2px;
+  font-family: sans-serif;
+}
+main {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 90vh;
+  width: 80vw;
+  margin-left: 10vw;
+  flex-flow: row wrap;
+
+}
+.card {
+  width: 300px;
+  height: 280px;
+  background-color: #fdfffc;
+  box-shadow: 0px 4px 6px 0px #6B717E;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 12px;
+  margin-right: 12px;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+.card p {
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+.detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  height: 35px;
+  background-color: #2ec4b6;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #011627;
+  font-weight: bold;
+  font-size: 16px;
+  transition: ease-in;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.detail:hover {
+  background-color: #011627;
+  color: #fdfffc;
+}
