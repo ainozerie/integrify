@@ -59,6 +59,12 @@ main {
   margin-top: 15px;
   font-size: 16px;
 }
+.card a {
+  color: #011627;
+  text-decoration: none;
+  transition: ease-in;
+  transition-duration: 0.3s;
+}
 .detail {
   position: absolute;
   bottom: 0;
@@ -78,5 +84,8 @@ main {
 }
 .detail:hover {
   background-color: #011627;
-  color: #fdfffc;
+}
+.detail:hover a {
+    color: #fdfffc;
+
 }

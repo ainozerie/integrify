@@ -1,9 +1,29 @@
-import React from 'react'
+import axios from 'axios';
+import React, { Component } from 'react'
+import Header from './Header';
 
-export default function Single(props) {
-  return (
-    <div>
-      {props.name}
-    </div>
-  )
+export default class Single extends Component {
+
+  state = {
+    data: '',
+    isLoading: true
+  }
+  componentDidMount() {
+    axios
+      .get(`https://api.openbrewerydb.org/breweries?by_name=${this.props.params.company}`)
+      .then((res) => {
+        this.setState({ data: res.data, isLoading: false });
+        console.log(this.state.data);
+      });
+  }
+  render() {
+    return (
+      <>
+      <div className='single'>
+        {this.props.params.company}
+      </div>
+      </>
+    )
+  }
 }
+
