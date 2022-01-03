@@ -24,7 +24,7 @@ export default class Main extends Component {
       }
     }
     const breweriesToDisplay = breweries.map((brewery, i) => {
-      return <Card {...brewery} key={i} />
+      return <Card {...brewery} key={i} clickHandler={this.props.searchOffHandler}/>
     });
 
     return (

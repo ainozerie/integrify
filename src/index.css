@@ -19,6 +19,10 @@ header {
   font-size: 26px;
   margin-left: 2vw;
 }
+.logo a {
+  text-decoration: none;
+  color: #fdfffc;
+}
 input {
   margin-right: 2vw;
   height: 30px;
@@ -62,6 +66,7 @@ main {
 .card a {
   color: #011627;
   text-decoration: none;
+    font-weight: bold;
   transition: ease-in;
   transition-duration: 0.3s;
 }
@@ -85,7 +90,61 @@ main {
 .detail:hover {
   background-color: #011627;
 }
-.detail:hover a {
-    color: #fdfffc;
+.detail:hover {
+  color: #fdfffc;
+}
+.singleWrapper {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single {
+  width: 450px;
+  height: 450px;
+  background-color: #fdfffc;
+  box-shadow: 0px 4px 6px 0px #6B717E;
+  border-radius: 5px;
+  position: relative;
+}
+.single h1 {
+  margin-left: 15px;
+  margin-top: 65px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+.single p {
+  margin-left: 25px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+.goBack {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  height: 40px;
+  width: 80px;
+  background-color: #EA3449;
+  transition: ease-in;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 
+}
+.goBack a {
+  text-decoration: none;
+  color: #011627;
+  transition: ease-in;
+  transition-duration: 0.3s;
+}
+.goBack:hover {
+  background-color: #011627;
+}
+.goBack:hover {
+  color: #fdfffc;
 }
