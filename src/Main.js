@@ -27,10 +27,19 @@ export default class Main extends Component {
       return <Card {...brewery} key={i} clickHandler={this.props.searchOffHandler}/>
     });
 
-    return (
-      <main>
-        {breweriesToDisplay}
-      </main>
-    )
+    if (this.state.isLoading === true) {
+      return (
+        <div className='singleWrapper'>
+          <div class="lds-dual-ring"></div>
+        </div>
+      )
+    } else {
+      return (
+        <main>
+          {breweriesToDisplay}
+        </main>
+      )
+    }
+
   }
 }
