@@ -132,6 +132,7 @@ main {
   transition-duration: 0.3s;
   cursor: pointer;
   font-weight: bold;
+  font-size: 14px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
 
@@ -141,6 +142,7 @@ main {
   color: #011627;
   transition: ease-in;
   transition-duration: 0.3s;
+
 }
 .goBack:hover {
   background-color: #011627;
